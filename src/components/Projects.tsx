@@ -20,7 +20,7 @@ export function Projects() {
       description: 'Smart device installed inside refrigerators that monitors food freshness, predicts spoilage, and alerts users in real time.',
       impact: 'Reduces food waste and protects health by predicting food lifespan and preventing consumption of unsafe food.',
       icon: Activity,
-      image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGZyaWRnZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYzNzIyMzQwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://i.pinimg.com/736x/08/4c/8c/084c8c2677b7be404c32fbafc1417f69.jpg',
       statusColor: 'bg-blue-500',
     },
     {
