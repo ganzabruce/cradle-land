@@ -53,7 +53,6 @@ export function Values() {
                 key={index}
                 className="group relative bg-[#F5F7FA] rounded-3xl p-8 hover:bg-white hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#F2C94C]/20"
                 data-aos="fade-up"
-                data-aos-delay={index * 100}
               >
                 {/* Icon with gradient background */}
                 <div className={`w-16 h-16 bg-gradient-to-br ${value.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg transform group-hover:scale-110 transition-transform duration-300`}>
@@ -75,7 +74,7 @@ export function Values() {
 
         {/* Bottom callout */}
         <div className="mt-16 text-center">
-          <div className="inline-block bg-gradient-to-r from-[#0A1E3F] to-[#0A1E3F]/90 rounded-2xl px-8 py-6 shadow-xl" data-aos="fade-up" data-aos-delay="500">
+          <div className="inline-block bg-gradient-to-r from-[#0A1E3F] to-[#0A1E3F]/90 rounded-2xl px-8 py-6 shadow-xl" data-aos="fade-up">
             <p className="text-white" style={{ fontSize: '1.125rem', fontWeight: 600 }}>
               Together, we're engineering a brighter future for Africa and the world.
             </p>

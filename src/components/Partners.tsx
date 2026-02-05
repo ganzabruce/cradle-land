@@ -18,7 +18,7 @@ export function Partners() {
 
   const testimonials = [
     {
-      quote: 'Cradle Land Enterprise represents the best of Rwandan innovation - combining technical excellence with social impact.',
+      quote: 'Cladle Land Enterprise represents the best of Rwandan innovation - combining technical excellence with social impact.',
       author: 'Paula Ingabire',
       role: 'Minister of ICT and Innovation',
       organization: 'Government of Rwanda'
@@ -132,7 +132,7 @@ export function Partners() {
         </div> */}
 
         {/* Call to Action */}
-        <div className="text-center" data-aos="fade-up" data-aos-delay="400">
+        <div className="text-center"  style={{ marginTop:"30px"}}>
           <div className="bg-gradient-to-r from-[#0A1E3F] to-[#0A1E3F]/90 rounded-2xl p-8 shadow-xl flex flex-col items-center">
             <h3 className="text-white mb-4" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
               Partner With Us

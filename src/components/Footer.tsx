@@ -26,7 +26,7 @@ export function Footer() {
             <div className="flex items-center ">
               <img 
                 src="/cradleland-logo.png" 
-                alt="Cradle Land Enterprise Logo" 
+                alt="Cladle Land Enterprise Logo" 
                 style={{
                   height: "100px",
                   width: "auto",
@@ -35,7 +35,7 @@ export function Footer() {
                 }}
               />
               <div>
-                <p className="text-6xl font-bold" style={{ fontSize:"20px", fontWeight:"bold"}}>Cradle Land</p>
+                <p className="text-6xl font-bold" style={{ fontSize:"20px", fontWeight:"bold"}}>Cladle Land</p>
                 <p className="text-sm text-gray-400" style={{ color:"lightgray"}}>Enterprise</p>
               </div>
             </div>
