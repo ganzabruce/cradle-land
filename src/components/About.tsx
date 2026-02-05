@@ -12,10 +12,10 @@ export function About() {
     },
     {
       name: 'Byiringiro Josue',
-      role: 'Co-founder & Head of Product Design',
+      role: 'Head of mechanical department',
       image: '/cto.jpeg',
       phone: '+250 784 425 756',
-      email: 'uwawetres04@gmail.com'
+      email: 'byrngrjosue@gmail.com'
     },
     {
       name: 'Ganza Bruce',

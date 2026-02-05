@@ -4,8 +4,14 @@ export function Partners() {
   const partners = [
     {
       name: 'schiercom',
-      logo: '/partners/rdb.png',
-      type: 'Government Partner',
+      logo: '/Schiercom.png',
+      type: 'Private Company',
+      description: 'Strategic partnership for technological innovation and economic development in Rwanda.'
+    },
+    {
+      name: 'schiercom',
+      logo: '/1000 HILLS SOLICITORS LTD_01.png',
+      type: 'Private Law Company',
       description: 'Strategic partnership for technological innovation and economic development in Rwanda.'
     }
   ];
@@ -29,7 +35,7 @@ export function Partners() {
     <section id="partners" className="py-20 lg:py-32 bg-[#F5F7FA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16" data-aos="fade-up">
+        <div className="text-center mb-16 flex flex-col items-center" data-aos="fade-up">
           <h2 className="text-[#0A1E3F] mb-4">Our Partners</h2>
           <div className="w-20 h-1 bg-[#F2C94C] mx-auto rounded-full mb-4"></div>
           <p className="text-[#0A1E3F]/70 max-w-2xl mx-auto" style={{ fontSize: '1.125rem' }}>
@@ -42,32 +48,50 @@ export function Partners() {
           {partners.map((partner, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#F2C94C]/20"
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-[#F2C94C]/30 overflow-hidden"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              {/* Partner Logo Placeholder */}
-              <div className="w-full h-24 bg-gradient-to-br from-[#0A1E3F]/5 to-[#F2C94C]/5 rounded-xl mb-6 flex items-center justify-center group-hover:from-[#0A1E3F]/10 group-hover:to-[#F2C94C]/10 transition-all duration-300">
-                <div className="text-[#0A1E3F]/30 font-bold text-lg text-center">
-                  {partner.name.split(' ').map(word => word[0]).join('')}
-                </div>
+              {/* Partner Logo */}
+              <div className="h-33 bg-gradient-to-br from-[#0A1E3F]/3 to-[#F2C94C]/5 flex items-center justify-center p-6 relative " style={{overflow:"hidden"}}>
+                <div className="absolute inset-0 bg-white/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <img 
+                  src={partner.logo} 
+                  alt={partner.name}
+                  className="max-h-20 max-w-full  object-contain relative z-10 filter drop-shadow-md group-hover:scale-110 transition-transform duration-300 border-2 border-gray-100 rounded-lg"
+                  style={{
+                    height:"250px",
+                    width:"250px"
+                  }}
+                />
               </div>
 
-              <div className="space-y-3">
-                <span className="inline-block px-3 py-1 bg-[#F2C94C]/10 text-[#0A1E3F] rounded-full text-sm font-medium">
-                  {partner.type}
-                </span>
-                <h3 className="text-[#0A1E3F] font-semibold text-lg">{partner.name}</h3>
-                <p className="text-[#0A1E3F]/70" style={{ fontSize: '0.875rem', lineHeight: 1.6 }}>
-                  {partner.description}
-                </p>
+              {/* Partner Info */}
+              <div className="p-6 space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="inline-block px-3 py-1 bg-[#F2C94C]/10 text-[#0A1E3F] rounded-full text-xs font-semibold uppercase tracking-wide">
+                    {partner.type}
+                  </span>
+                  <div className="w-8 h-8 rounded-full bg-[#F2C94C]/10 flex items-center justify-center group-hover:bg-[#F2C94C]/20 transition-colors duration-300">
+                    <div className="w-2 h-2 rounded-full bg-[#F2C94C]"></div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-[#0A1E3F] font-bold text-lg mb-2 group-hover:text-[#F2C94C] transition-colors duration-300">
+                    {partner.name}
+                  </h3>
+                  <p className="text-[#0A1E3F]/60 leading-relaxed text-sm">
+                    {partner.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
         {/* Testimonials */}
-        <div className="mb-16">
+        <div className="mb-16" style={{marginTop:"150px"}}>
           <div className="text-center mb-12" data-aos="fade-up">
             <h3 className="text-[#0A1E3F] mb-4">What Our Partners Say</h3>
             <div className="w-16 h-1 bg-[#F2C94C] mx-auto rounded-full"></div>
@@ -110,7 +134,7 @@ export function Partners() {
 
         {/* Call to Action */}
         <div className="text-center" data-aos="fade-up" data-aos-delay="400">
-          <div className="bg-gradient-to-r from-[#0A1E3F] to-[#0A1E3F]/90 rounded-2xl p-8 shadow-xl">
+          <div className="bg-gradient-to-r from-[#0A1E3F] to-[#0A1E3F]/90 rounded-2xl p-8 shadow-xl flex flex-col items-center">
             <h3 className="text-white mb-4" style={{ fontSize: '1.5rem', fontWeight: 700 }}>
               Partner With Us
             </h3>
