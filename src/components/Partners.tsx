@@ -91,7 +91,7 @@ export function Partners() {
         </div>
 
         {/* Testimonials */}
-        <div className="mb-16" style={{marginTop:"150px"}}>
+        {/* <div className="mb-16" style={{marginTop:"150px"}}>
           <div className="text-center mb-12" data-aos="fade-up">
             <h3 className="text-[#0A1E3F] mb-4">What Our Partners Say</h3>
             <div className="w-16 h-1 bg-[#F2C94C] mx-auto rounded-full"></div>
@@ -105,7 +105,6 @@ export function Partners() {
                 data-aos="fade-up"
                 data-aos-delay={index * 200}
               >
-                {/* Quote Icon */}
                 <div className="absolute top-4 right-4">
                   <Quote className="text-[#F2C94C]/20" size={32} />
                 </div>
@@ -130,7 +129,7 @@ export function Partners() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Call to Action */}
         <div className="text-center" data-aos="fade-up" data-aos-delay="400">
