@@ -10,7 +10,7 @@ export function Projects() {
       description: 'Motion-based renewable energy technology that converts human and mechanical motion into usable electrical energy for low-power applications.',
       impact: 'Generates clean power from kinetic energy, reducing reliance on fossil fuels and enabling smart infrastructure in urban environments.',
       icon: Battery,
-      image: 'https://images.unsplash.com/photo-1668097613569-3405bb63262b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZW5ld2FibGUlMjBlbmVyZ3klMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2MzcyMjM0MHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image:"/icumu.jpeg",
       statusColor: 'bg-blue-500',
     },
     {
@@ -20,7 +20,7 @@ export function Projects() {
       description: 'Smart device installed inside refrigerators that monitors food freshness, predicts spoilage, and alerts users in real time.',
       impact: 'Reduces food waste and protects health by predicting food lifespan and preventing consumption of unsafe food.',
       icon: Activity,
-      image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGZyaWRnZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYzNzIyMzQwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '/e-preserver.jpeg',
       statusColor: 'bg-blue-500',
     },
     {
@@ -30,7 +30,7 @@ export function Projects() {
       description: 'Smart glass solutions delivering adaptive, interactive, and assistive interfaces across education, healthcare, and enterprise sectors.',
       impact: 'Enhances accessibility for people with disabilities, transforms learning environments, and improves productivity in smart facilities.',
       icon: Code2,
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGdsYXNzJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NjM3MjIzNDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image:"/imboni.jpeg",
       statusColor: 'bg-green-500',
     },
     {
@@ -48,7 +48,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 lg:py-32 bg-[#F5F7FA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-[#0A1E3F] mb-4">Our Projects</h2>
           <div className="w-20 h-1 bg-[#F2C94C] mx-auto rounded-full mb-4"></div>
           <p className="text-[#0A1E3F]/70 max-w-2xl mx-auto" style={{ fontSize: '1.125rem' }}>
@@ -57,12 +57,14 @@ export function Projects() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             const Icon = project.icon;
             return (
               <div
                 key={project.id}
                 className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <div className="relative h-56 overflow-hidden">
                   <ImageWithFallback

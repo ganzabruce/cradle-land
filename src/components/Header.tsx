@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Logo } from './Logo';
 import { Menu, X } from 'lucide-react';
 import { Button } from './ui/button';
 
@@ -20,6 +19,7 @@ export function Header() {
     { label: 'Mission & Vision', id: 'mission' },
     { label: 'Projects', id: 'projects' },
     { label: 'Values', id: 'values' },
+    { label: 'Partners', id: 'partners' },
     { label: 'Contact', id: 'contact' },
   ];
 
@@ -27,7 +27,22 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Logo />
+          <div className="flex items-center ">
+              <img 
+                src="/cradleland-logo.png" 
+                alt="Cradle Land Enterprise Logo" 
+                style={{
+                  height: "100px",
+                  width: "auto",
+                  marginTop:"20px",
+                  marginBottom:"0px"
+                }}
+              />
+              <div>
+                <p className="text-6xl font-bold" style={{ fontSize:"20px", fontWeight:"bold"}}>Cradle Land</p>
+                <p className="text-sm text-gray-400" style={{ color:"gray",marginTop:"-10px"}}>Enterprise</p>
+              </div>
+            </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
