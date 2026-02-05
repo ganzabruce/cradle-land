@@ -10,7 +10,7 @@ export function Projects() {
       description: 'Motion-based renewable energy technology that converts human and mechanical motion into usable electrical energy for low-power applications.',
       impact: 'Generates clean power from kinetic energy, reducing reliance on fossil fuels and enabling smart infrastructure in urban environments.',
       icon: Battery,
-      image: 'https://images.unsplash.com/photo-1668097613569-3405bb63262b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZW5ld2FibGUlMjBlbmVyZ3klMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2MzcyMjM0MHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image:"/icumu.jpeg",
       statusColor: 'bg-blue-500',
     },
     {
@@ -20,7 +20,7 @@ export function Projects() {
       description: 'Smart device installed inside refrigerators that monitors food freshness, predicts spoilage, and alerts users in real time.',
       impact: 'Reduces food waste and protects health by predicting food lifespan and preventing consumption of unsafe food.',
       icon: Activity,
-      image: 'https://i.pinimg.com/736x/08/4c/8c/084c8c2677b7be404c32fbafc1417f69.jpg',
+      image: '/e-preserver.jpeg',
       statusColor: 'bg-blue-500',
     },
     {
@@ -30,7 +30,7 @@ export function Projects() {
       description: 'Smart glass solutions delivering adaptive, interactive, and assistive interfaces across education, healthcare, and enterprise sectors.',
       impact: 'Enhances accessibility for people with disabilities, transforms learning environments, and improves productivity in smart facilities.',
       icon: Code2,
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGdsYXNzJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NjM3MjIzNDB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image:"/imboni.jpeg",
       statusColor: 'bg-green-500',
     },
     {
