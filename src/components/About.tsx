@@ -26,10 +26,23 @@ export function About() {
     },
     {
       name: 'Byishimo Kevin',
-      role: 'Software Developer',
+      role: 'Head of Software Department',
       image: '/kevin.png',
       phone: '+250 795 863 410',
       email: 'kbusije@gmail.com'
+    },
+    {
+      name: 'NDAYISHIMIYE Rene Serge',
+      role: 'Head of Hardware Department',
+      image: '/other.jpeg',
+      email: 'ndayishimiyereneserge@gmail.com'
+    },
+    {
+      name: 'Koen',
+      role: 'Partner & Capital Strategy',
+      image: '/other1.png',
+      phone: 'Works at Schericom',
+      email: ''
     }
   ];
 
@@ -105,20 +118,20 @@ export function About() {
                     </p>
 
                     <div className="space-y-2">
-                      <a
+                      {member.phone && <a
                         href={`tel:${member.phone}`}
                         className="flex items-center gap-2 text-[#0A1E3F]/70 hover:text-[#F2C94C] transition-colors justify-center md:justify-start"
                       >
                         <Phone size={18} />
                         <span>{member.phone}</span>
-                      </a>
-                      <a
+                      </a>}
+                      {member.email && <a
                         href={`mailto:${member.email}`}
                         className="flex items-center gap-2 text-[#0A1E3F]/70 hover:text-[#F2C94C] transition-colors justify-center md:justify-start"
                       >
                         <Mail size={18} />
                         <span>{member.email}</span>
-                      </a>
+                      </a>}
                     </div>
                   </div>
                 </div>
