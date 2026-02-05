@@ -27,7 +27,7 @@ export default function App() {
     // Simulate loading time - you can adjust this duration
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 0);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
