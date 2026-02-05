@@ -84,11 +84,11 @@ export function About() {
         <div className="max-w-2xl mx-auto mt-2" data-aos="fade-up">
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
             <div className="flex flex-col md:flex-row items-center gap-6 p-8">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <div className="w-32 h-32 rounded-2xl overflow-hidden ring-4 ring-[#F2C94C]/20">
                   <ImageWithFallback
-                    src="https://res.cloudinary.com/dkiytyubm/image/upload/v1765574068/co-founder_bb7qdd.jpg"
-                    alt="Gaga Andy - CEO"
+                    src="/cto.jpeg"
+                    alt="CTO"
                     className="w-full h-full object-cover"
                   />
                 </div>
