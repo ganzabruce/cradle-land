@@ -2,6 +2,37 @@ import { Mail, Phone, Award } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function About() {
+  const teamMembers = [
+    {
+      name: 'Gaga Andy',
+      role: 'CEO & Co-founder',
+      image: 'https://res.cloudinary.com/dkiytyubm/image/upload/v1765574068/founder_j1iv52.jpg',
+      phone: '+250 798 672 478',
+      email: 'andygaga250@gmail.com'
+    },
+    {
+      name: 'Byiringiro Josue',
+      role: 'Co-founder & Head of Product Design',
+      image: '/cto.jpeg',
+      phone: '+250 784 425 756',
+      email: 'uwawetres04@gmail.com'
+    },
+    {
+      name: 'Ganza Bruce',
+      role: 'Software Developer',
+      image: '/ganza2.jpg',
+      phone: '+250 790 569 492',
+      email: 'ganzabruce10@gmail.com'
+    },
+    {
+      name: 'Byishimo Kevin',
+      role: 'Software Developer',
+      image: '/kevin.png',
+      phone: '+250 795 863 410',
+      email: 'kbusije@gmail.com'
+    }
+  ];
+
   return (
     <section id="about" className="py-20 lg:py-32 bg-[#F5F7FA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,83 +72,58 @@ export function About() {
           </div>
         </div>
 
-        {/* CEO Card */}
-        <div className="max-w-2xl mx-auto mb-2" data-aos="fade-up">
-          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-            <div className="flex flex-col md:flex-row items-center gap-6 p-8">
-              <div className="flex-shrink-0">
-                <div className="w-32 h-32 rounded-2xl overflow-hidden ring-4 ring-[#F2C94C]/20">
-                  <ImageWithFallback
-                    src="https://res.cloudinary.com/dkiytyubm/image/upload/v1765574068/founder_j1iv52.jpg"
-                    alt="Gaga Andy - CEO"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-[#0A1E3F] mb-1">Gaga Andy</h3>
-                <p className="text-[#F2C94C] mb-4" style={{ fontWeight: 600 }}>
-                  CEO & Co-founder
-                </p>
-
-                <div className="space-y-2">
-                  <a
-                    href="tel:0798672478"
-                    className="flex items-center gap-2 text-[#0A1E3F]/70 hover:text-[#F2C94C] transition-colors justify-center md:justify-start"
-                  >
-                    <Phone size={18} />
-                    <span>0798672478</span>
-                  </a>
-                  <a
-                    href="mailto:andygaga250@gmail.com"
-                    className="flex items-center gap-2 text-[#0A1E3F]/70 hover:text-[#F2C94C] transition-colors justify-center md:justify-start"
-                  >
-                    <Mail size={18} />
-                    <span>andygaga250@gmail.com</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+        {/* Team Section */}
+        <div className="mb-16">
+          <div className="text-center mb-12" data-aos="fade-up">
+            <h3 className="text-[#0A1E3F] mb-4">Meet Our Team</h3>
+            <div className="w-16 h-1 bg-[#F2C94C] mx-auto rounded-full"></div>
           </div>
-        </div>
-        <div className="max-w-2xl mx-auto mt-2" data-aos="fade-up">
-          <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
-            <div className="flex flex-col md:flex-row items-center gap-6 p-8">
-              <div className="shrink-0">
-                <div className="w-32 h-32 rounded-2xl overflow-hidden ring-4 ring-[#F2C94C]/20">
-                  <ImageWithFallback
-                    src="/cto.jpeg"
-                    alt="CTO"
-                    className="w-full h-full object-cover"
-                  />
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {teamMembers.map((member, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-shadow duration-300"
+                data-aos="fade-up"
+                data-aos-delay={index * 50}
+              >
+                <div className="flex flex-col md:flex-row items-center gap-6 p-8">
+                  <div className="shrink-0">
+                    <div className="w-32 h-32 rounded-2xl overflow-hidden ring-4 ring-[#F2C94C]/20">
+                      <ImageWithFallback
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex-1 text-center md:text-left">
+                    <h3 className="text-[#0A1E3F] mb-1">{member.name}</h3>
+                    <p className="text-[#F2C94C] mb-4" style={{ fontWeight: 600 }}>
+                      {member.role}
+                    </p>
+
+                    <div className="space-y-2">
+                      <a
+                        href={`tel:${member.phone}`}
+                        className="flex items-center gap-2 text-[#0A1E3F]/70 hover:text-[#F2C94C] transition-colors justify-center md:justify-start"
+                      >
+                        <Phone size={18} />
+                        <span>{member.phone}</span>
+                      </a>
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="flex items-center gap-2 text-[#0A1E3F]/70 hover:text-[#F2C94C] transition-colors justify-center md:justify-start"
+                      >
+                        <Mail size={18} />
+                        <span>{member.email}</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-[#0A1E3F] mb-1">Uwawe Tresor</h3>
-                <p className="text-[#F2C94C] mb-4" style={{ fontWeight: 600 }}>
-                co-founder & Head of product design
-                </p>
-
-                <div className="space-y-2">
-                  <a
-                    href="tel:0798672478"
-                    className="flex items-center gap-2 text-[#0A1E3F]/70 hover:text-[#F2C94C] transition-colors justify-center md:justify-start"
-                  >
-                    <Phone size={18} />
-                    <span>0784425756</span>
-                  </a>
-                  <a
-                    href="mailto:uwawetres04@gmail.com"
-                    className="flex items-center gap-2 text-[#0A1E3F]/70 hover:text-[#F2C94C] transition-colors justify-center md:justify-start"
-                  >
-                    <Mail size={18} />
-                    <span>uwawetres04@gmail.com</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

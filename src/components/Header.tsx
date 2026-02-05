@@ -19,6 +19,7 @@ export function Header() {
     { label: 'Mission & Vision', id: 'mission' },
     { label: 'Projects', id: 'projects' },
     { label: 'Values', id: 'values' },
+    { label: 'Partners', id: 'partners' },
     { label: 'Contact', id: 'contact' },
   ];
 

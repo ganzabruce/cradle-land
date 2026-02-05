@@ -6,6 +6,7 @@ import { About } from './components/About';
 import { MissionVision } from './components/MissionVision';
 import { Projects } from './components/Projects';
 import { Values } from './components/Values';
+import { Partners } from './components/Partners';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import Loader from './components/Loader';
@@ -48,6 +49,7 @@ export default function App() {
         <MissionVision />
         <Projects />
         <Values />
+        <Partners />
         <Contact />
       </main>
       <Footer />
