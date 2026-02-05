@@ -48,7 +48,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 lg:py-32 bg-[#F5F7FA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-[#0A1E3F] mb-4">Our Projects</h2>
           <div className="w-20 h-1 bg-[#F2C94C] mx-auto rounded-full mb-4"></div>
           <p className="text-[#0A1E3F]/70 max-w-2xl mx-auto" style={{ fontSize: '1.125rem' }}>
@@ -57,12 +57,14 @@ export function Projects() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project) => {
+          {projects.map((project, index) => {
             const Icon = project.icon;
             return (
               <div
                 key={project.id}
                 className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
               >
                 <div className="relative h-56 overflow-hidden">
                   <ImageWithFallback

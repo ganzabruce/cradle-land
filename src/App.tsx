@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import AOS from 'aos';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -16,18 +17,16 @@ export default function App() {
 
   useEffect(() => {
     // Initialize AOS
-    import('aos').then(AOS => {
-      AOS.default.init({
-        duration: 800,
-        once: true,
-        offset: 100
-      });
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
     });
 
     // Simulate loading time - you can adjust this duration
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, []);
