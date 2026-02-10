@@ -8,7 +8,7 @@ export function About() {
       role: 'CEO & Co-founder',
       image: 'https://res.cloudinary.com/dkiytyubm/image/upload/v1765574068/founder_j1iv52.jpg',
       // phone: '+250 798 672 478',
-      email: 'andygaga250@gmail.com'
+      // email: 'andygaga250@gmail.com'
     },
     {
       name: 'Byiringiro Josue',
