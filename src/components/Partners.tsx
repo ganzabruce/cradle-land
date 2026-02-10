@@ -3,16 +3,16 @@ import { Star, Quote } from 'lucide-react';
 export function Partners() {
   const partners = [
     {
-      name: 'schiercom',
+      name: ' Schiercom',
       logo: '/Schiercom.png',
       type: 'Private Company',
       description: 'Strategic partnership for technological innovation and economic development in Rwanda.'
     },
     {
-      name: 'schiercom',
+      name: '1000 HILLS SOLICITORS LTD',
       logo: '/1000 HILLS SOLICITORS LTD_01.png',
       type: 'Private Law Company',
-      description: 'Strategic partnership for technological innovation and economic development in Rwanda.'
+      description: 'Law firm a in Rwanda.'
     }
   ];
 

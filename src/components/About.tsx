@@ -7,42 +7,42 @@ export function About() {
       name: 'Gaga Andy',
       role: 'CEO & Co-founder',
       image: 'https://res.cloudinary.com/dkiytyubm/image/upload/v1765574068/founder_j1iv52.jpg',
-      phone: '+250 798 672 478',
+      // phone: '+250 798 672 478',
       email: 'andygaga250@gmail.com'
     },
     {
       name: 'Byiringiro Josue',
       role: 'Head of mechanical department',
       image: '/cto.jpeg',
-      phone: '+250 784 425 756',
-      email: 'byrngrjosue@gmail.com'
+      // phone: '+250 784 425 756',
+      // email: 'byrngrjosue@gmail.com'
     },
     {
       name: 'Ganza Bruce',
       role: 'Software Developer',
       image: '/ganza2.jpg',
-      phone: '+250 790 569 492',
-      email: 'ganzabruce10@gmail.com'
+      // phone: '+250 790 569 492',
+      // email: 'ganzabruce10@gmail.com'
     },
     {
       name: 'Byishimo Kevin',
       role: 'Head of Software Department',
       image: '/kevin.png',
-      phone: '+250 795 863 410',
-      email: 'kbusije@gmail.com'
+      // phone: '+250 795 863 410',
+      // email: 'kbusije@gmail.com'
     },
     {
       name: 'NDAYISHIMIYE Rene Serge',
       role: 'Head of Hardware Department',
       image: '/other.jpeg',
-      email: 'ndayishimiyereneserge@gmail.com'
+      // email: 'ndayishimiyereneserge@gmail.com'
     },
     {
       name: 'Koen',
       role: 'Partner & Capital Strategy',
       image: '/other1.png',
-      phone: 'Works at Schericom',
-      email: ''
+      // phone: 'Works at Schericom',
+      // email: ''
     }
   ];
 
